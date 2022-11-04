@@ -1,0 +1,953 @@
+@font-face {
+    font-family: DD-TTNorms;
+    src: url(asset/font/TTNorms-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:  DD-TTNorms;
+    src: url(asset/font/TTNorms-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: DD-TTNorms;
+    src: url(asset/font/TTNorms-Bold.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: DD-TTNorms;
+    src: url(asset/font/TTNorms-ExtraBold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: DD-TTNorms; 
+}
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+.main{
+    background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=800,format=auto,quality=60/https://cdn.doordash.com/media/consumer/home/landing/new/hero_landing_us_mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 450px;
+    background-position-x: center;
+}
+.main-sign{
+    padding: 10px 0px;
+}
+.sign{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;  
+    padding-right: 20px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.sign span{
+    padding: 0 8px;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.04ch;
+}
+.sign a{
+    display: inline-flex;
+    padding: 0 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color:#494949;
+    font-weight: 600;
+    max-width: 100%;
+    min-height: 40px;
+    border: none;
+    border-radius: 1000px;
+    background: #fff;
+    border-width: 100px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0ch;
+}
+.header{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px; 
+}
+.header span{
+    display: block;
+    font-size: 32px;
+    max-width: 334px;
+    color: #fff;
+    letter-spacing: -0.04ch;
+    font-weight: 600;
+    padding-top:18px;
+    padding-bottom: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+.main-icon{
+    display: none;
+}
+.search{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.searchin{
+    display: flex;
+    font-size:16px;
+    line-height: 22px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    max-width: 315px;
+    height: 48px;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 4px 7px 6px;
+    background-color: #fff;
+    width: 100%;
+}
+.searchicon{
+    margin-right: 8px;
+    max-width: 100%;
+}
+.search a{
+    font-size: 16px;
+    margin: 16px;
+    font-weight: 500;
+    color: #fff; 
+}
+.location{
+    display: none;
+}
+input{
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+input::placeholder{
+    text-align: left;
+    font-family: DD-TTNorms;
+    font-weight: 500;
+}
+.enter{
+    cursor: pointer;
+}
+.merchant{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing:-0.04ch;
+    line-height: 22px;
+    padding: 24px 0;
+    margin: 0px 16px;
+    color: #191919;
+}
+.merchant-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 4px;
+}
+.merchant-1 span{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 139px;
+    height: 56px;
+}
+.merchant button{
+    position: relative;
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    color: #fff;
+    background: #eb1700;
+    height: 40px;
+    width: 120.56px;
+}
+button:hover{
+    cursor: pointer;
+}
+.merchant-2{
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-top: 15px;
+}
+#block{
+    display: flex;
+    flex-flow: wrap;
+    padding: 16px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 100px;
+}
+#block img{
+    width: 88px;
+    height: 88px;
+}
+.banner{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    width: 208px;
+}
+.banner h2{
+    display: block;
+    font-size: 32px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    color: #191919;
+    
+}
+.banner p{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0ch;
+    text-align: left;
+    line-height: 24px; 
+    margin-top: 0;
+    margin-left: 0;
+}
+.banner a{
+    text-decoration: none;
+    font: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.04ch;
+    color: #eb1700;
+    padding-bottom: 10px;
+}
+.banner button{
+    display: flex;
+    background: none;
+    text-align: center;
+    background-color: transparent;
+    align-items: center;
+    padding: 1px 6px;
+    margin-left: -3px;
+    border: none;
+}
+.banner svg{
+    position: relative;
+    top: -5px;
+    width: 12px;
+    height: 10px;
+}
+.dasher, .partner, .app{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    min-width: 320px;
+}
+.dasher-content, .partner-content, .app-content{
+    margin-left: 20px;
+}
+.table{
+    background-color: rgb(255, 240, 237);
+    width: 100%;   
+    margin-top:100px;
+}
+.table1{
+    position: relative;
+    padding-left: 16px;
+    padding-right: 81.6px;
+    margin-left: auto ;
+    margin-right: auto;
+}
+.table1 img{
+    position: absolute;
+    width: 256px;
+    height: 184.5px;
+    margin-left: 48px;
+    margin-top: -90px;
+}
+.table1-content{
+    margin: 20px 0px 0px;
+    position: relative; 
+     top: 120px;
+}
+.table1-content span{
+    display: block;
+    width: 76vw;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600; 
+    letter-spacing: -0.04ch;  
+}
+.table1-content p{
+     display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    display: block;
+    width: 66vw;
+}
+.table1-content button{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    position: relative;
+    background-color:  #eb1700;
+    border-radius: 100px;
+    border: none;
+    min-height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 105px;
+}
+.table2{
+    margin-top: 160px;
+}
+.table2 img{
+    width: 256px;
+    height: 185px;
+}
+.table2-content{
+    margin: 20px 0px 0px;
+    padding: 0px 105.6px 97px 16px;
+}
+.table2-content span{
+    display: block;
+    width: 70vw;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600; 
+    letter-spacing: -0.04ch;
+}  
+.table2-content p{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 63vw;
+}
+.table2-content button{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    background-color:  #eb1700;
+    border-radius: 100px;
+    border: none;
+    min-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    text-decoration: none;
+    color: #fff; 
+}
+footer{
+    background:#000;
+    background-size: cover;
+}
+.both{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 20px;
+    column-gap: 35px;
+}
+.both h4{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.both a{
+    color: #c4c4c4;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 450;
+    width: 140px;
+    height: 20px;
+}
+.both a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+.section{
+    display: flex;
+    padding: 32px 0px 0px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.section h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color:#fff;
+}
+.section a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    text-decoration: none;
+    color: #c4c4c4;
+    white-space: nowrap;
+}
+.section a:hover{
+    cursor: pointer;
+    text-decoration:underline;
+    color: #fff;
+}
+.business{
+    width: 116.09px;
+    height: 151.53px;
+}
+.store{
+    display: flex;
+    flex-flow: column;
+    padding: 32px 0 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.store svg{
+    height: 48px;
+    width: 144px;
+    border: 1px solid #fff;
+    background-color: rgb(88, 85, 85);
+    border: none;
+    border-radius: 8px;
+    opacity: 0.6;
+}
+.store svg:hover{
+    cursor: pointer;
+    fill:#fff;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    gap: 15px;
+    cursor: pointer;
+}
+.bottom{
+    display: flex;
+    padding-bottom: 32px;
+    padding-top: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 0px;
+    row-gap: 1.5px; 
+}
+.bottom a{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #c4c4c4;
+}
+.bottom span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #c4c4c4;
+    bottom: 0;
+    margin-left: 16px;
+}
+.bottom a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+.bottom img{
+    width: 32px;
+    height: 18px;
+    opacity: 1;
+}
+.social img{
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+}
+@media screen and (min-width: 375px) {
+
+    .banner{
+        width: 100vw;
+        height: 450px; 
+    }
+    .sign{
+        padding-right: 24px;
+    }
+    .sign a{
+        padding: 0 16px;
+    }
+    .merchant-2{
+        margin-left: -20px;
+    }
+    .banner{
+        margin-left: 20px;
+        margin-bottom: 200px;
+    }
+    .banner h2, .banner p{
+        width: 208px;
+        height: 80px;
+    }
+    .banner h2{
+        line-height: 30px;
+    }
+    .table1 img{
+        position: absolute;
+        height: 224px;
+        width: 311px; 
+    }
+    .table1-content{
+        top: 155px;
+    }
+    .table1-content p{
+        width: 74vw;
+    }
+    .table2{
+        margin-top: 200px;
+    }
+    .table img{
+        width: 330px;
+        height: 223px;
+    }
+    .table2-content p{
+        width: 64vw;
+    }
+}
+@media screen and (min-width: 425px){
+    .main{
+        width: 100vw;
+        height: 450px;
+    }
+    .sign{
+        padding-right: 16px;
+    }
+    .searchin svg{
+        width: 24px;
+        height: 24px;
+    }
+    .merchant-1{
+        column-gap: 50px;
+    }
+    .merchant-1 span{
+        width: 160px;
+        height: 44px;
+    }
+    .merchant-2{
+        margin-left: -25px;
+    }
+   .dasher-content h2, .partner-content h2, .app-content h2{
+    width: 250px;
+    height: 40px;
+   }
+   .dasher-content h2{
+    white-space: nowrap;
+   }
+   .dasher a{
+    margin-bottom: 20px;
+   }
+   .partner h2{
+    padding-bottom: 60px;
+   }
+   .partner a{
+    white-space: nowrap;
+   }
+   .app{
+    padding-top: 50px;
+   }
+   .dasher-content p, .partner-content p, .app-content p{
+    width: 250px;
+    height: 72px;
+   }
+   .banner a{
+    width: 79.67px;
+    height: 20px;
+   }
+   .dasher-content svg{
+    position: relative;
+    top: -10px;
+   }
+   .partner-content svg{
+    position: relative;
+    left: 33px;
+    top: 1px;
+   }
+   .app-content svg{
+    top: 0px;
+   }
+    .table1 img{
+        width: 361px;
+        height: 260px;
+        margin-top: -155px;
+    }
+    .table1-content{
+        margin-left: 15px;
+        top: 178px;
+    }
+    .table1-content p{
+        width: 302.41px;
+        height: 60px;
+
+    }
+    .table2{
+        margin-top: 270px;
+    }
+    .table2 img{
+        width: 361px; 
+        height: 260px;
+    }
+    .table2-content{
+        margin-left: 15px;
+    }
+    .table2-content p{
+        width:278.41px;
+        height: 80px;
+    }
+    .both{
+        margin-top: 0px; 
+        column-gap: 75px;
+    }
+    .both a{
+        text-align: center;
+    }
+    .bottom{
+        width: 385px;
+    }
+} 
+@media screen and (min-width: 768px){
+    .main{
+        width: 100vw;
+        height: 450px;
+    }
+    .searchicon{
+        display: none;
+
+    }
+    .location{
+        display: flex;
+        height: 30px;
+        width: 30px;
+    }
+    input{
+        width: 45vw;
+        padding-left: 10px;
+    }
+    .merchant-2{
+        margin-left: -14px;
+    }
+    #block img{
+        width: 124px;
+        height: 124px;
+    }
+    .banner{
+       margin-left: 200px;
+    }
+    .merchant-1{
+        gap: 32px;
+    }
+    #block{
+        padding-top: 50px;
+    }
+    .dasher, .partner, .app{
+        gap: 40px;
+    }
+    .table{
+        background: none;
+    }
+    .table1{
+        margin-top: -60px;
+    }
+    .table1 img{
+        width: 426px;
+        height:307px;
+        margin-top: 0px;
+        left: 294px;
+        
+    }
+    .table1-content{
+        top: 10px;
+        left: 30px;
+    }
+    .table1-content span{
+        width: 23vw;
+    }
+    .table1-content p{
+        width: 26vw;
+        padding-bottom: 90px;
+    }
+    .table1-content a{
+        top: 20px;
+    }
+    .table2{
+        margin-top: 88px;
+        background: rgb(255, 240, 237);
+        height: 525px;
+        padding-top: 94px;
+    }
+    .table2 img{
+        width: 426px;
+        height: 307px;
+    }
+    .table2-content{
+        margin-top:  -310px;
+        margin-left: 470px;
+        right: 0;   
+    }
+    .table2-content span{
+        width: 18vw;
+    }
+    .table2-content p{
+        width: 27vw;
+        padding-bottom: 120px;
+    }
+    .both{
+        display: flex;
+        flex-flow: column;
+    }
+    .cities div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 120px;
+        row-gap: 6px;
+    }
+    .cities{
+        padding-bottom: 30px;
+    }
+    .cities h4{
+        margin: 15px 0 0 0px;
+    }
+    .both h4{
+        text-align: left;
+    }
+    .both a{
+        text-align: left;
+    }
+    .cuisine div{
+        display: grid;
+        grid-template-columns: repeat(2,100px);
+        column-gap: 250px;
+    }
+    .cuisine a{
+        width: 364px;
+    }
+    .store{
+        padding-top: 50px;
+    }
+    .section{
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        column-gap: 150px;
+        margin-left: 20px;
+    }
+    .section a{
+        line-height: 10px;
+    }
+    .social{
+        margin-right: 40px;
+    }
+    div.last{
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-left: -50px;
+    }
+    .bottom{
+        width: 728px;
+        height: 93px;
+    }
+}
+@media screen and (min-width: 960px){
+    .main{
+        height: 580px;
+    }
+    .header svg{
+        display: none;
+    }
+    .main-icon svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-icon{
+        display: flex;
+        padding-right: 170px;
+        position: relative;
+        top: 80px;
+    }
+    .main-icon span{
+        padding-top: 5px;
+    }
+    .header span{
+        font-size: 64px;
+        max-width: 458px;
+        line-height: 76px;
+        padding-top: 50px;
+    }
+    .enter{
+        display: flex;
+        width: 30px;
+        height: 30px;;  
+    }
+    .banner{
+        padding-left: 75px;
+    }
+    .table1 img{
+        width: 554px;
+        height: 400px;
+        left: 358px;
+    }
+    .table1 span{
+        width: 147px;
+    }
+    .table1 p{
+        width: 28vw;
+    }
+    .table1-content{
+        top: 70px;
+    }
+    .table1-content button{
+        font-size: 16px;
+        width: 120px;
+        height: 40px;
+    }
+    .table2{
+        margin-top: 170px;
+        padding-top: 110px;
+        height: 644.81px;
+    }
+    .table2 img{
+        width: 554px;
+        height: 399px;
+    }
+    .table2-content{
+        margin-left: 645px;
+        margin-top: -341px;
+    }
+    .table2-content span{
+        width: 25vw;
+    }
+    .table2-content p{
+        width: 28vw;
+    }
+    .table2-content button{
+        font-size: 16px;
+        width: 152px;
+        height: 40px;
+    }
+    .cities div{
+        column-gap: 0px;
+        row-gap: 5px;
+    }
+    .cuisine h4{
+
+    }
+    .cuisine div{
+        column-gap: 100px;
+        row-gap: 6px;
+    }
+    .both{
+        display: flex;
+        flex-flow: row;
+        margin-left: -85px;
+        padding-top: 10px;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .both a{
+        width: 153.3px;
+        height: 20px;
+    }
+    .store{
+        display: flex;
+        align-items: flex-end;
+        padding-right: 20px;
+    }
+    .main-section{
+        display: flex;
+        flex-flow: row-reverse;
+        align-items: flex-start;
+    }
+    .section{
+        column-gap: 50px;
+    }
+    .section h4{
+        width: 113.77px;
+        height: 22px;
+        white-space: nowrap;
+    }
+    .social{
+        margin-right: 20px;
+    }
+    .bottom{
+        margin-left: -15px;
+    }
+} 
+@media screen and (min-width: 1024px){
+    .main-icon{
+        padding-right: 200px;
+        gap: 10px;
+    }
+    .searchin{
+        max-width: 400px;
+        margin-left: -10px;
+    }
+    .banner{
+        padding-left: 106px;;
+    }
+    .merchant-1{
+        gap: 30px;
+    }
+    .table1 img{
+        width: 597px;
+        height: 430px;
+        left: 379px;
+    }
+    .table2 img{
+        width: 597px;
+        height: 430px;
+    }
+    .table2{
+        padding-top: 142px;
+        height: 676px;
+    }
+    .both{
+        margin-left: -34px;
+    }
+}
