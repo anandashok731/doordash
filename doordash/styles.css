@@ -1018,6 +1018,10 @@ footer{
         position: relative;
         left: -20px;
     }
+    .app{
+        position: relative;
+        top: -50px;
+    }
     .dasher svg{
         position: relative;
         left: -15px;
@@ -1119,6 +1123,9 @@ footer{
     .banner{
         display: flex;
         align-items: baseline;
+    }
+    .app{
+        top: 5px;
     }
     .table1{
         margin-left: 200px;
