@@ -147,6 +147,9 @@ input::placeholder{
 .enter{
     cursor: pointer;
 }
+.enter svg{
+    fill: #494949;
+}
 .merchant{
     display: block;
     font-size: 16px;
@@ -373,7 +376,7 @@ button:hover{
     color: #fff; 
 }
 footer{
-    background:#000;
+    background:#191919;
     background-size: cover;
 }
 .both{
@@ -387,6 +390,7 @@ footer{
     color: #fff;
     font-size: 16px;
     text-align: center;
+    font-weight: 500;
 }
 .both a{
     color: #c4c4c4;
@@ -649,7 +653,7 @@ footer{
 } 
 @media screen and (min-width: 768px){
     .main{
-        width: 100vw;
+        width: 100%;
         height: 450px;
     }
     .searchicon{
@@ -948,6 +952,198 @@ footer{
         height: 676px;
     }
     .both{
-        margin-left: -34px;
+        position: relative;
+        left: -30px;
+    }
+    .cities a{
+        line-height: 35px;
+    }
+    .cuisine a{
+        position: relative;
+        top: -20px;
+    }
+}
+@media screen and (min-width:1184px){
+    .enter svg{
+        border: 1px solid #eb1700;
+        border-radius: 100px;
+        background-color: #eb1700;
+        fill: #fff;
+        width: 35px;
+        height: 30px;
+    }
+}
+@media screen and (min-width:1440px){
+    .main{
+        background-position-y: 50%;
+    }
+    .main-icon{
+        position: relative;
+        left: -210px;
+    }
+    .main-sign{
+        position: relative;
+        top: 2px;
+    }
+    .sign span{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .banner{
+        display: flex;
+        flex-direction: row;
+    }
+    .dasher, .partner, .app{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .banner h2, .banner p{
+        text-align: center;
+        position: relative;
+        left: -90px;
+    }
+    .banner h2{
+        line-height: 32px;
+    }
+    .banner p{
+        padding-top: 10px;
+    }
+    .banner a{
+        font-size: 18px;
+        width: 102.44px;
+        height: 24px;
+        font-weight: 700;
+        white-space: nowrap;
+        position: relative;
+        left: -20px;
+    }
+    .dasher svg{
+        position: relative;
+        left: -15px;
+    }
+    .app svg{
+        position: relative;
+        left: -20px;
+    }
+    .table1{
+        margin-left: 50px;
+    }
+    .table1 img{
+        margin-left: 200px;
+        margin-top: -50px;
+        width: 700px;
+        height: 500px;
+    }
+    .table1-content span{
+        font-size: 40px;
+        width: 249px;
+        line-height: 40px;
+    }
+    .table1-content p{
+        font-size: 18px;
+    }
+    .table1-content button{
+        position: relative;
+        top: -30px;
+    }
+    .table2{
+        padding-bottom: 580px;
+    }
+    .table2 img{
+        width: 700px;
+        height: 500px;
+        position:relative;
+        left: 120px;
+    }
+    .table2-content{
+        position: relative;
+        left: 220px;
+        top: -40px;
+        width: 40%;
+    }
+    .table2-content span{
+        font-size: 40px;
+        white-space: nowrap;
+    }
+    .table2-content p{
+        font-size: 18px;
+    }
+    .table2-content button{
+        position: relative;
+        top: -35px;
+    }
+    .both{
+        gap: 60px;
+        margin-left: -90px;
+    }
+    .cities div{
+        column-gap: 50px;
+        row-gap: 15px;
+    }
+    .cuisine div{
+        column-gap: 160px;
+        row-gap: 15px;
+        padding-top: 5px;
+    }
+    .section{
+        margin-left: 155px;
+        column-gap: 100px;
+    }
+    .section a{
+        line-height: 20px;
+    }
+    .store{
+        display: flex;
+        align-items: center;
+        margin-left: 150px;
+    }
+    .main-section{
+        column-gap: 100px;
+    }
+    .social{
+        position:relative;
+        left: 120px;
+    }
+    div.last{
+    display: flex;
+    justify-content: center;
+    gap: 240px;
+    margin-left: -220px;
+    }
+}
+@media screen and (min-width:1800px){
+    .main-icon{
+        padding-right: 375px;
+    }
+    .banner{
+        display: flex;
+        align-items: baseline;
+    }
+    .table1{
+        margin-left: 200px;
+    }
+    .table1-content p{
+        width: 407px;
+    }
+    .table2 img{
+        position: relative;
+        left: 300px;
+        top: -40px;
+    }
+    .table2-content{
+        left: 400px;
+    }
+    .table2-content p{
+        width: 407px;
+    }
+    footer{
+        max-width: 100%;
+    }
+    .section{
+        margin-left: 330px;
+    }
+    .social{
+        left: 210px;
     }
 }
