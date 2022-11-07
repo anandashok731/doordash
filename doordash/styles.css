@@ -113,7 +113,7 @@ body{
     font-weight: 500;
     justify-content: center;
     align-items: center;
-    max-width: 270px;
+    max-width: 280px;
     height: 45px;
     border-radius: 18px;
     border: none;
@@ -149,7 +149,7 @@ input::placeholder{
 .enter{
     cursor: pointer;
     width: 45px;
-    
+
 }
 .enter svg{
     fill: #494949;
@@ -344,7 +344,7 @@ button:hover{
     width: 105px;
 }
 .table2{
-    margin-top: 160px;
+    margin-top: 140px;
 }
 .table2 img{
     width: 256px;
@@ -514,15 +514,18 @@ footer{
 }
 @media screen and (min-width: 375px) {
 
-    .banner{
+    .main{
         width: 100vw;
         height: 450px; 
     }
     .sign{
-        padding-right: 24px;
+        padding-right: 20px;
     }
     .sign a{
-        padding: 0 16px;
+        padding: 0 15px;
+    }
+    .searchin{
+        padding: 10px 10px;
     }
     .merchant-2{
         margin-left: -20px;
@@ -562,11 +565,14 @@ footer{
 }
 @media screen and (min-width: 425px){
     .main{
-        width: 100vw;
+        width: 100%;
         height: 450px;
     }
     .sign{
         padding-right: 16px;
+    }
+    input{
+        width: 100%;
     }
     .searchin svg{
         width: 24px;
@@ -667,16 +673,22 @@ footer{
     }
     .searchicon{
         display: none;
-
     }
     .location{
         display: flex;
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
+        border-radius: 30px;
+    }
+    .enter{
+        padding-left: 20px;
     }
     input{
         width: 45vw;
         padding-left: 10px;
+    }
+    .searchin{
+        max-width: 400px;
     }
     .merchant-2{
         margin-left: -14px;
@@ -835,7 +847,7 @@ footer{
     }
     .enter{
         display: flex;
-        width: 30px;
+        width: 45px;
         height: 30px;;  
     }
     .banner{
@@ -1038,6 +1050,15 @@ footer{
     .app svg{
         position: relative;
         left: -20px;
+    }
+    .partner a{
+        position: relative;
+        left: -50px;
+    }
+    .partner svg{
+        position: relative;
+        left:0px;
+        top: -1px;
     }
     .table1{
         margin-left: 50px;
