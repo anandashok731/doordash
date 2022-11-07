@@ -34,19 +34,19 @@ body{
     background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=800,format=auto,quality=60/https://cdn.doordash.com/media/consumer/home/landing/new/hero_landing_us_mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 450px;
     background-position-x: center;
 }
 .main-sign{
-    padding: 10px 0px;
+    padding: 13px 0px;
 }
 .sign{
     display: flex;
     justify-content: flex-end; 
     align-items: center;  
-    padding-right: 20px;
-    margin-top: 2px;
+    padding-right: 15px;
+    margin-top: 4px;
     cursor: pointer;
 }
 .sign span{
@@ -91,7 +91,7 @@ body{
     color: #fff;
     letter-spacing: -0.04ch;
     font-weight: 600;
-    padding-top:18px;
+    padding-top:15px;
     padding-bottom: 30px;
     text-align: center;
     line-height: 40px;
@@ -113,16 +113,18 @@ body{
     font-weight: 500;
     justify-content: center;
     align-items: center;
-    max-width: 280px;
+    max-width: 270px;
     height: 45px;
     border-radius: 18px;
     border: none;
-    padding: 15px 6px 8px 10px;
+    padding: 16px 6px 16px 10px;
     background-color: #fff;
     width: 100%;
 }
 .searchicon{
     margin-right: 8px;
+    width: 24px;
+    height: 24px;
     max-width: 100%;
 }
 .search a{
@@ -137,7 +139,7 @@ body{
 input{
     border: none;
     width: 100%;
-    font-size: 16px;
+    font-size: 17px;
 }
 input::placeholder{
     text-align: left;
@@ -146,9 +148,14 @@ input::placeholder{
 }
 .enter{
     cursor: pointer;
+    width: 45px;
+    
 }
 .enter svg{
     fill: #494949;
+    width: 25px;
+    height: 25px;
+    padding-top: 4px;
 }
 .merchant{
     display: block;
@@ -159,6 +166,7 @@ input::placeholder{
     padding: 24px 0;
     margin: 0px 16px;
     color: #191919;
+    padding-bottom: 80px;
 }
 .merchant-1{
     display: flex;
@@ -173,6 +181,7 @@ input::placeholder{
     padding: 0;
     width: 139px;
     height: 56px;
+    margin-left: -20px;
 }
 .merchant button{
     position: relative;
